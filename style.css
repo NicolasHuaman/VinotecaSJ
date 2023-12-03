@@ -16,14 +16,18 @@ body {
 }
 
 header {
-  background-color: #f7f9f6;
+  background-color: #e0e0c4;
+}
+
+h1 {
+  margin: 20px;
 }
 
 h3 {
   margin-bottom: 0px !important;
 }
 .logo {
-  height: 150px;
+  height: 100px;
 }
 
 .icono {
@@ -83,6 +87,15 @@ button {
   overflow: visible !important;
   outline: none !important;
   border-radius: 10px;
+  font-size: large !important;
+}
+
+input {
+  border: 1px solid #3f628b !important;
+}
+
+textarea {
+  border: 1px solid #3f628b !important;
 }
 
 button:hover {
@@ -135,6 +148,10 @@ nav {
 a {
   text-decoration: none;
   color: black;
+}
+
+label {
+  font-size: large !important;
 }
 @media only screen and (max-width: 767px) {
   body {

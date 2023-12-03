@@ -16,14 +16,16 @@
 <body>
   <!-- Inicio de Header -->
   <header>
-    <div class="container-fluid text-center">
+    <div class="container-fluid ">
       <div class="row">
-        <div class="col-md-4 d-flex justify-content-start"><a href="" class="sesion">Iniciar Sesion/Registrarse</a>
-        </div>
-        <div class="col-md-4"><img class="logo" src="Imagenes/Logo.png" alt=""></div>
+
+        <div class="col-md-8"><img class="logo" src="Imagenes/Logo.png" alt=""></div>
         <div class="col-md-4 d-flex justify-content-end">
-          <a href=""><img src="Imagenes/iconaccount.png" class="icono mt-2 ml-auto" alt="icono"></a>
-          <a href="productos.html"><img src="Imagenes/Icono-compra.png" class="icono mt-2 ml-auto" alt="icono"></a>
+
+          <a class="align-self-end" href=""><img src="Imagenes/iconaccount.png" class="icono mt-2 ml-auto"
+              alt="icono"></a>
+          <a href="productos.html" class="align-self-end"><img src="Imagenes/Icono-compra.png"
+              class="icono mt-2 ml-auto" alt="icono"></a>
         </div>
       </div>
     </div>
@@ -59,41 +61,44 @@
     </div>
   </nav>
 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="container">
+          <h1 class="text-center"><b>Contacto</b></h1>
+          <h3>Escribinos tu consulta y te responderemos a la brevedad.<h3>
+              <div class="row justify-content-center">
+                <form action="javascript: void(0);" method="post" enctype="multipart/form-data" name="formContacto"
+                  id="formContacto" data-parsley-validate="" novalidate="">
+                  <input type="hidden" name="idprod" id="idprod" value="">
+                  <div class="col-md-12">
+                    <label>Nombre y Apellido </label>
+                    <input class="form-control input-lg" type="text" name="nombre" id="nombre" required=""
+                      data-parsley-id="4">
+                  </div>
+                  <div class="col-md-12">
+                    <label>E-mail</label>
+                    <input class="form-control input-lg" type="email" name="mail" id="mail" required=""
+                      data-parsley-id="6">
 
-  <section class="content contacto text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Contacto</h1>
-          <h3>Escribinos consultas, comentarios y te responderemos a la brevedad.</h3>
+                  </div>
+
+              </div>
+              <div class="col-md-12">
+                <label>Mensaje</label>
+                <textarea class="form-control input-lg" rows="12" name="mensaje" id="mensaje"
+                  data-parsley-id="14"></textarea>
+              </div>
+              <div class="col-md-12 d-flex justify-content-center mt-2 "><br>
+                <button>Enviar</button>
+
+              </div>
+
         </div>
-      </div>
-      <div class="row">
-        <form action="javascript: void(0);" method="post" enctype="multipart/form-data" name="formContacto"
-          id="formContacto" data-parsley-validate="" novalidate="">
-          <input type="hidden" name="idprod" id="idprod" value="">
-          <div class="col-md-12">
-            <label>Nombre y Apellido </label>
-            <input class="form-control input-lg" type="text" name="nombre" id="nombre" required="" data-parsley-id="4">
-          </div>
-          <div class="col-md-12">
-            <label>E-mail</label>
-            <input class="form-control input-lg" type="email" name="mail" id="mail" required="" data-parsley-id="6">
-
-          </div>
 
       </div>
-      <div class="col-md-12">
-        <label>Mensaje</label>
-        <textarea class="form-control input-lg" rows="12" name="mensaje" id="mensaje" data-parsley-id="14"></textarea>
-      </div>
-      <div class="col-md-12"><br>
-        <button>Enviar</button>
-        <span id="aguarde" style="display:none">Aguarde un instante...</span>
-      </div>
-
     </div>
-  </section>
+  </div>
   <br><br>
 
   <!-- Inicio de footer -->
